@@ -27,13 +27,10 @@ public class User {
 	@OneToMany
 	@JoinColumn(name="User_id")
 	private List<Address> address;
-	
 	@OneToMany
 	@JoinColumn(name="User_id")
 	private List<Order> order;
-	
 	public User() {}
-
 	public User(String firstName, String lastName, String email, String phno, String username, String password) {
 		this.firstName = firstName;
 		this.lastName = lastName;
